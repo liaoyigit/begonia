@@ -80,6 +80,10 @@
         gap: 8px;
         padding: 12px 12px 0;
       }
+      .img-link {
+        display: block;
+        text-decoration: none;
+      }
       .img {
         width: 100%;
         aspect-ratio: 4 / 3;
@@ -88,6 +92,7 @@
         display: block;
         border-radius: 14px;
         border: 1px solid rgba(15, 23, 42, 0.06);
+        cursor: zoom-in;
       }
       .content {
         padding: 12px 12px 14px;
@@ -152,12 +157,16 @@
       <div class="grid">
         <div class="card">
           <div class="imgs">
-            <img
-              class="img"
-              src="https://ts1.tc.mm.bing.net/th/id/R-C.0b869775cdf759c5be37235c03a6cbe4?rik=6oCeGIkYjoAbiQ&riu=http%3a%2f%2fpic1.arkoo.com%2f6DEEAF68749141718F5A0D8B55E944C6%2fpicture%2fo_1ip48ud131uug1a7pm3n1atr13qg19e.jpg&ehk=g9MPVuDi9WIo9taA6bj2mmDy4lXwVwlhn6Tx9x%2bo6N8%3d&risl=&pid=ImgRaw&r=0"
-              alt="银斑球兰"
-            />
-            <img class="img" src="https://img.alicdn.com/i3/2066218109/O1CN010YS9Gh29lyVF0xn2s_!!2066218109.jpg" alt="苏奈球兰" />
+            <a class="img-link" href="https://ts1.tc.mm.bing.net/th/id/R-C.0b869775cdf759c5be37235c03a6cbe4?rik=6oCeGIkYjoAbiQ&riu=http%3a%2f%2fpic1.arkoo.com%2f6DEEAF68749141718F5A0D8B55E944C6%2fpicture%2fo_1ip48ud131uug1a7pm3n1atr13qg19e.jpg&ehk=g9MPVuDi9WIo9taA6bj2mmDy4lXwVwlhn6Tx9x%2bo6N8%3d&risl=&pid=ImgRaw&r=0" target="_blank" rel="noopener noreferrer">
+              <img
+                class="img"
+                src="https://ts1.tc.mm.bing.net/th/id/R-C.0b869775cdf759c5be37235c03a6cbe4?rik=6oCeGIkYjoAbiQ&riu=http%3a%2f%2fpic1.arkoo.com%2f6DEEAF68749141718F5A0D8B55E944C6%2fpicture%2fo_1ip48ud131uug1a7pm3n1atr13qg19e.jpg&ehk=g9MPVuDi9WIo9taA6bj2mmDy4lXwVwlhn6Tx9x%2bo6N8%3d&risl=&pid=ImgRaw&r=0"
+                alt="银斑球兰"
+              />
+            </a>
+            <a class="img-link" href="https://img.alicdn.com/i3/2066218109/O1CN010YS9Gh29lyVF0xn2s_!!2066218109.jpg" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="https://img.alicdn.com/i3/2066218109/O1CN010YS9Gh29lyVF0xn2s_!!2066218109.jpg" alt="苏奈球兰" />
+            </a>
           </div>
           <div class="content">
             <div class="name">球兰类 <span class="muted">（银斑球兰、苏奈球兰）</span></div>
@@ -168,17 +177,23 @@
 
         <div class="card">
           <div class="imgs">
-            <img
-              class="img"
-              src="https://p3-flow-imagex-sign.byteimg.com/ecom-shop-material/jpeg_m_f7ade61aeb798cd8fd1296dd8bb3fe98_sx_1214556_www1110-1110~tplv-a9rns2rl98-pc_smart_face_crop-v1:512:384.image?lk3s=8e244e95&rcl=202603251620451C1ED5AEEB717B808C52&rrcfp=cee388b0&x-expires=2089786854&x-signature=kADZN6sC8UeNMH%2BT459yeknJbAs%3D"
-              alt="素珍秋海棠"
-            />
-            <img
-              class="img"
-              src="https://p3-flow-imagex-sign.byteimg.com/ecom-shop-material/png_m_4319cb2539ec35a897795f073a35aeb9_sx_1393219_www1080-1440~tplv-a9rns2rl98-pc_smart_face_crop-v1:512:384.image?lk3s=8e244e95&rcl=20260325161958E923DEA0EFA9997FBCE1&rrcfp=cee388b0&x-expires=2089786812&x-signature=M8R67EBbw961ohwQEtyq4dkwa%2FQ%3D"
-              alt="卢贝尔盖秋海棠"
-            />
-            <img class="img" src="./assets/cat-eye-begonia.png" alt="猫眼秋海棠" />
+            <a class="img-link" href="https://p3-flow-imagex-sign.byteimg.com/ecom-shop-material/jpeg_m_f7ade61aeb798cd8fd1296dd8bb3fe98_sx_1214556_www1110-1110~tplv-a9rns2rl98-pc_smart_face_crop-v1:512:384.image?lk3s=8e244e95&rcl=202603251620451C1ED5AEEB717B808C52&rrcfp=cee388b0&x-expires=2089786854&x-signature=kADZN6sC8UeNMH%2BT459yeknJbAs%3D" target="_blank" rel="noopener noreferrer">
+              <img
+                class="img"
+                src="https://p3-flow-imagex-sign.byteimg.com/ecom-shop-material/jpeg_m_f7ade61aeb798cd8fd1296dd8bb3fe98_sx_1214556_www1110-1110~tplv-a9rns2rl98-pc_smart_face_crop-v1:512:384.image?lk3s=8e244e95&rcl=202603251620451C1ED5AEEB717B808C52&rrcfp=cee388b0&x-expires=2089786854&x-signature=kADZN6sC8UeNMH%2BT459yeknJbAs%3D"
+                alt="素珍秋海棠"
+              />
+            </a>
+            <a class="img-link" href="https://p3-flow-imagex-sign.byteimg.com/ecom-shop-material/png_m_4319cb2539ec35a897795f073a35aeb9_sx_1393219_www1080-1440~tplv-a9rns2rl98-pc_smart_face_crop-v1:512:384.image?lk3s=8e244e95&rcl=20260325161958E923DEA0EFA9997FBCE1&rrcfp=cee388b0&x-expires=2089786812&x-signature=M8R67EBbw961ohwQEtyq4dkwa%2FQ%3D" target="_blank" rel="noopener noreferrer">
+              <img
+                class="img"
+                src="https://p3-flow-imagex-sign.byteimg.com/ecom-shop-material/png_m_4319cb2539ec35a897795f073a35aeb9_sx_1393219_www1080-1440~tplv-a9rns2rl98-pc_smart_face_crop-v1:512:384.image?lk3s=8e244e95&rcl=20260325161958E923DEA0EFA9997FBCE1&rrcfp=cee388b0&x-expires=2089786812&x-signature=M8R67EBbw961ohwQEtyq4dkwa%2FQ%3D"
+                alt="卢贝尔盖秋海棠"
+              />
+            </a>
+            <a class="img-link" href="./assets/cat-eye-begonia.png" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="./assets/cat-eye-begonia.png" alt="猫眼秋海棠" />
+            </a>
           </div>
           <div class="content">
             <div class="name">竹节秋海棠类 <span class="muted">（素珍、卢贝尔盖、猫眼秋海棠）</span></div>
@@ -189,7 +204,9 @@
 
         <div class="card">
           <div class="imgs">
-            <img class="img" src="./assets/juliet-begonia.png" alt="茱丽叶" />
+            <a class="img-link" href="./assets/juliet-begonia.png" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="./assets/juliet-begonia.png" alt="茱丽叶" />
+            </a>
           </div>
           <div class="content">
             <div class="name">蟆叶秋海棠类 <span class="muted">（茱丽叶）</span></div>
