@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>养护手册速查</title>
+    <style>
+      :root {
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --brand: #1677ff;
+        --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        --radius: 18px;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        font-family: "Microsoft YaHei", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+        background: radial-gradient(1000px 400px at 50% -100px, rgba(22, 119, 255, 0.1), transparent 60%),
+          var(--bg);
+        padding: 18px;
+        color: var(--text);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      .container {
+        max-width: 980px;
+        margin: 0 auto;
+      }
+      .topbar {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin: 6px 0 14px;
+      }
+      .title {
+        font-size: clamp(18px, 2vw + 10px, 26px);
+        letter-spacing: 0.4px;
+        color: #0f172a;
+      }
+      .link {
+        font-size: 13px;
+        color: var(--brand);
+        text-decoration: none;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(22, 119, 255, 0.1);
+        border: 1px solid rgba(22, 119, 255, 0.18);
+        white-space: nowrap;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+      .card {
+        background: var(--card);
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(15, 23, 42, 0.06);
+      }
+      .imgs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+        gap: 8px;
+        padding: 12px 12px 0;
+      }
+      .img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: contain;
+        background: #f3f4f6;
+        display: block;
+        border-radius: 14px;
+        border: 1px solid rgba(15, 23, 42, 0.06);
+      }
+      .content {
+        padding: 12px 12px 14px;
+      }
+      .name {
+        font-weight: 800;
+        font-size: 15px;
+        margin-bottom: 8px;
+        color: #111827;
+      }
+      .row {
+        font-size: 13px;
+        color: var(--text);
+        margin-top: 6px;
+      }
+      .row b {
+        color: #0f172a;
+      }
+      .muted {
+        color: var(--muted);
+      }
+
+      @media (max-width: 680px) {
+        body {
+          padding: 14px;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+        .content {
+          padding: 12px;
+        }
+        .imgs {
+          padding: 12px 12px 0;
+          gap: 8px;
+        }
+      }
+      @media print {
+        body {
+          background: #fff;
+          padding: 0;
+        }
+        .card {
+          box-shadow: none;
+          border: 1px solid #e5e7eb;
+          break-inside: avoid;
+        }
+        .link {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <div class="title">养护手册速查</div>
+        <a class="link" href="./plant.html">查看详细版</a>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="imgs">
+            <img
+              class="img"
+              src="https://ts1.tc.mm.bing.net/th/id/R-C.0b869775cdf759c5be37235c03a6cbe4?rik=6oCeGIkYjoAbiQ&riu=http%3a%2f%2fpic1.arkoo.com%2f6DEEAF68749141718F5A0D8B55E944C6%2fpicture%2fo_1ip48ud131uug1a7pm3n1atr13qg19e.jpg&ehk=g9MPVuDi9WIo9taA6bj2mmDy4lXwVwlhn6Tx9x%2bo6N8%3d&risl=&pid=ImgRaw&r=0"
+              alt="银斑球兰"
+            />
+            <img class="img" src="https://img.alicdn.com/i3/2066218109/O1CN010YS9Gh29lyVF0xn2s_!!2066218109.jpg" alt="苏奈球兰" />
+          </div>
+          <div class="content">
+            <div class="name">球兰类 <span class="muted">（银斑球兰、苏奈球兰）</span></div>
+            <div class="row"><b>光照</b> 明亮散射光；高温期和刚浇水别暴晒</div>
+            <div class="row"><b>浇水</b> 干透再浇，约 1–2 周浇1次（看温度与通风）</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imgs">
+            <img
+              class="img"
+              src="https://p3-flow-imagex-sign.byteimg.com/ecom-shop-material/jpeg_m_f7ade61aeb798cd8fd1296dd8bb3fe98_sx_1214556_www1110-1110~tplv-a9rns2rl98-pc_smart_face_crop-v1:512:384.image?lk3s=8e244e95&rcl=202603251620451C1ED5AEEB717B808C52&rrcfp=cee388b0&x-expires=2089786854&x-signature=kADZN6sC8UeNMH%2BT459yeknJbAs%3D"
+              alt="素珍秋海棠"
+            />
+            <img
+              class="img"
+              src="https://p3-flow-imagex-sign.byteimg.com/ecom-shop-material/png_m_4319cb2539ec35a897795f073a35aeb9_sx_1393219_www1080-1440~tplv-a9rns2rl98-pc_smart_face_crop-v1:512:384.image?lk3s=8e244e95&rcl=20260325161958E923DEA0EFA9997FBCE1&rrcfp=cee388b0&x-expires=2089786812&x-signature=M8R67EBbw961ohwQEtyq4dkwa%2FQ%3D"
+              alt="卢贝尔盖秋海棠"
+            />
+            <img
+              class="img"
+              src="https://bkimg.cdn.bcebos.com/pic/f636afc379310a55b3198163c00a54a98226cffcba5f?x-bce-process=image/format,f_auto/watermark,image_d2F0ZXIvYmFpa2UyNzI,g_7,xp_5,yp_5,P_20/resize,m_lfit,limit_1,h_1080"
+              alt="猫眼秋海棠"
+            />
+          </div>
+          <div class="content">
+            <div class="name">海棠类 <span class="muted">（素珍、卢贝尔盖、猫眼秋海棠）</span></div>
+            <div class="row"><b>光照</b> 散射光即可；避强光直射</div>
+            <div class="row"><b>浇水</b> 表土微干就浇，一周一到两次，不积水</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

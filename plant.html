@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>植物养护手册</title>
+<style>
+:root{
+  --bg:#f5f7fa;
+  --card:#ffffff;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --brand:#1677ff;
+  --warn:#e53935;
+  --shadow:0 10px 30px rgba(15,23,42,.08);
+  --radius:18px;
+}
+
+:root{
+  --bg:#f5f7fa;
+  --card:#ffffff;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --brand:#1677ff;
+  --warn:#e53935;
+  --shadow:0 10px 30px rgba(15,23,42,.08);
+  --radius:18px;
+}
+
+:root{
+  --bg:#f5f7fa;
+  --card:#ffffff;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --brand:#1677ff;
+  --warn:#e53935;
+  --shadow:0 10px 30px rgba(15,23,42,.08);
+  --radius:18px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:"Microsoft YaHei",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  background:
+    radial-gradient(1000px 400px at 50% -100px, rgba(22,119,255,.10), transparent 60%),
+    var(--bg);
+  padding:24px;
+  color:var(--text);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+.container{max-width:980px;margin:0 auto}
+.main-title{
+  text-align:center;
+  font-size:clamp(22px, 2.2vw + 14px, 32px);
+  margin:10px 0 22px;
+  letter-spacing:.5px;
+  color:#0f172a;
+}
+
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  overflow:hidden;
+  margin-bottom:18px;
+  box-shadow:var(--shadow);
+  border:1px solid rgba(15,23,42,.06);
+  transform:translateY(0);
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 40px rgba(15,23,42,.12);
+}
+
+.plant-img{
+  width:100%;
+  height:clamp(220px, 55vw, 360px);
+  object-fit:contain;
+  display:block;
+  background:#f3f4f6;
+}
+
+.cat-img-grid{
+  padding:14px 14px 0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(160px, 1fr));
+  gap:10px;
+}
+.cat-img{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:contain;
+  background:#f3f4f6;
+  border-radius:14px;
+  border:1px solid rgba(15,23,42,.06);
+}
+
+.card-content{padding:clamp(14px, 2.2vw, 20px)}
+.name{
+  font-size:18px;
+  font-weight:800;
+  margin-bottom:10px;
+  color:#111827;
+}
+
+.tags{margin-bottom:12px}
+.tag{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:rgba(22,119,255,.10);
+  color:var(--brand);
+  padding:5px 10px;
+  border-radius:999px;
+  font-size:13px;
+  margin-right:8px;
+  margin-bottom:8px;
+  border:1px solid rgba(22,119,255,.18);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:10px;
+  font-size:14px;
+}
+.grid-item{
+  background:linear-gradient(180deg, rgba(15,23,42,.03), rgba(15,23,42,.02));
+  padding:12px 12px;
+  border-radius:14px;
+  border:1px solid rgba(15,23,42,.06);
+}
+.grid-item strong{
+  display:block;
+  margin-bottom:4px;
+  color:#0f172a;
+  letter-spacing:.2px;
+}
+
+.warn{
+  margin-top:12px;
+  color:var(--warn);
+  font-size:14px;
+  font-weight:800;
+}
+
+@media (max-width: 640px){
+  body{padding:16px}
+  .card-content{padding:16px}
+  .grid{grid-template-columns:1fr}
+  .plant-img{height:clamp(190px, 52vw, 300px)}
+  .name{font-size:16px;margin-bottom:8px}
+  .cat-img-grid{padding:12px 12px 0;gap:8px}
+  .cat-img{border-radius:12px}
+  .grid{gap:8px}
+  .grid-item{padding:10px}
+  .tag{font-size:12px;padding:4px 9px;margin-right:6px;margin-bottom:6px}
+  .warn{font-size:13px}
+}
+
+@media print{
+  body{background:#fff;padding:0}
+  .card{box-shadow:none;border:1px solid #e5e7eb;break-inside:avoid}
+  .card:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1 class="main-title">室内盆栽精简养护手册</h1>
+  <div style="display:flex;justify-content:center;margin:-10px 0 16px;">
+    <a href="./quick.html" style="font-size:13px;color:var(--brand);text-decoration:none;padding:6px 10px;border-radius:999px;background:rgba(22,119,255,.10);border:1px solid rgba(22,119,255,.18);">
+      打开速查页（图片+频次）
+    </a>
+  </div>
+
+  <!-- 球兰类 -->
+  <div class="card">
+    <div class="cat-img-grid">
+      <img class="cat-img" src="https://ts1.tc.mm.bing.net/th/id/R-C.0b869775cdf759c5be37235c03a6cbe4?rik=6oCeGIkYjoAbiQ&riu=http%3a%2f%2fpic1.arkoo.com%2f6DEEAF68749141718F5A0D8B55E944C6%2fpicture%2fo_1ip48ud131uug1a7pm3n1atr13qg19e.jpg&ehk=g9MPVuDi9WIo9taA6bj2mmDy4lXwVwlhn6Tx9x%2bo6N8%3d&risl=&pid=ImgRaw&r=0" alt="银斑球兰">
+      <img class="cat-img" src="https://img.alicdn.com/i3/2066218109/O1CN010YS9Gh29lyVF0xn2s_!!2066218109.jpg" alt="苏奈球兰">
+    </div>
+    <div class="card-content">
+      <div class="name">球兰类</div>
+      <div class="tags">
+        <span class="tag">银斑球兰</span>
+        <span class="tag">苏奈球兰</span>
+      </div>
+      <div class="grid">
+        <div class="grid-item"><strong>浇水</strong>宁干勿湿。北方非多雨夏季一到两周浇一次即可，尽量不积水；叶片落灰可冲淋，通风处吹干再晒，避免光照灼伤。</div>
+        <div class="grid-item"><strong>盆器</strong>宁小勿大，不要频繁更换盆土。换土沿原盆添土即可，口径相差 1-2cm 为佳。</div>
+        <div class="grid-item"><strong>花期</strong>根系优秀前提下，多光照更易抽藤生梗开花。花期少浇水（水分大易消苞）；花梗不要剪，利于二次复花。</div>
+        <div class="grid-item"><strong>综合</strong>不需要额外关照，放在明亮散射光处即可。非高温期间不怕晒；盆土潮湿时别暴晒。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 海棠类 -->
+  <div class="card">
+    <div class="cat-img-grid">
+      <img class="cat-img" src="https://p3-flow-imagex-sign.byteimg.com/ecom-shop-material/jpeg_m_f7ade61aeb798cd8fd1296dd8bb3fe98_sx_1214556_www1110-1110~tplv-a9rns2rl98-pc_smart_face_crop-v1:512:384.image?lk3s=8e244e95&rcl=202603251620451C1ED5AEEB717B808C52&rrcfp=cee388b0&x-expires=2089786854&x-signature=kADZN6sC8UeNMH%2BT459yeknJbAs%3D" alt="素珍秋海棠">
+      <img class="cat-img" src="https://p3-flow-imagex-sign.byteimg.com/ecom-shop-material/png_m_4319cb2539ec35a897795f073a35aeb9_sx_1393219_www1080-1440~tplv-a9rns2rl98-pc_smart_face_crop-v1:512:384.image?lk3s=8e244e95&rcl=20260325161958E923DEA0EFA9997FBCE1&rrcfp=cee388b0&x-expires=2089786812&x-signature=M8R67EBbw961ohwQEtyq4dkwa%2FQ%3D" alt="卢贝尔盖秋海棠">
+      <img class="cat-img" src="https://bkimg.cdn.bcebos.com/pic/f636afc379310a55b3198163c00a54a98226cffcba5f?x-bce-process=image/format,f_auto/watermark,image_d2F0ZXIvYmFpa2UyNzI,g_7,xp_5,yp_5,P_20/resize,m_lfit,limit_1,h_1080" alt="猫眼秋海棠">
+    </div>
+    <div class="card-content">
+      <div class="name">海棠类（秋海棠系）</div>
+      <div class="tags">
+        <span class="tag">素珍秋海棠</span>
+        <span class="tag">卢贝尔盖秋海棠</span>
+        <span class="tag">猫眼秋海棠</span>
+      </div>
+      <div class="grid">
+        <div class="grid-item"><strong>温度</strong>不耐寒，冻到会掉叶。</div>
+        <div class="grid-item"><strong>浇水</strong>喜水不喜涝。尽量别等完全干透再浇（容易根系坏死）；偶尔一次缺水问题不大。</div>
+        <div class="grid-item"><strong>盆器</strong>小盆养大花，尽量不换大盆。</div>
+        <div class="grid-item"><strong>光照</strong>光照需求不高，不耐强光（避免强光暴晒）。</div>
+        <div class="grid-item"><strong>花期</strong>通常为观叶类植物，开花消耗养分但不多；可按观感修剪/掐剪。</div>
+        <div class="grid-item"><strong>综合</strong>别强光暴晒、别过分缺水/过涝、别换太大的盆、别冻到。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 通用 -->
+  <div class="card">
+    <div class="card-content">
+      <div class="name">通用避坑（两类都适用）</div>
+      <div class="grid">
+        <div class="grid-item"><strong>宁干勿涝</strong>两类都怕积水导致根系问题。</div>
+        <div class="grid-item"><strong>光照别猛来</strong>球兰偏明亮散射；海棠避强光暴晒。</div>
+        <div class="grid-item"><strong>控温保叶</strong>海棠怕冻；球兰越冬建议不低于 10℃。</div>
+        <div class="grid-item"><strong>少换小步走</strong>盆器宁小不贪大，尽量减少频繁更换盆土。</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
