@@ -47,7 +47,8 @@ body{
     var(--bg);
   padding:24px;
   color:var(--text);
-  line-height:1.65;
+  font-size:17px;
+  line-height:1.72;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
@@ -55,8 +56,8 @@ body{
 .container{max-width:980px;margin:0 auto}
 .main-title{
   text-align:center;
-  font-size:clamp(22px, 2.2vw + 14px, 32px);
-  margin:10px 0 22px;
+  font-size:clamp(26px, 2.4vw + 14px, 36px);
+  margin:12px 0 24px;
   letter-spacing:.5px;
   color:#0f172a;
 }
@@ -99,24 +100,24 @@ body{
   border:1px solid rgba(15,23,42,.06);
 }
 
-.card-content{padding:clamp(14px, 2.2vw, 20px)}
+.card-content{padding:clamp(16px, 2.5vw, 24px)}
 .name{
-  font-size:18px;
+  font-size:22px;
   font-weight:800;
-  margin-bottom:10px;
+  margin-bottom:12px;
   color:#111827;
 }
 
-.tags{margin-bottom:12px}
+.tags{margin-bottom:14px}
 .tag{
   display:inline-flex;
   align-items:center;
   gap:6px;
   background:rgba(22,119,255,.10);
   color:var(--brand);
-  padding:5px 10px;
+  padding:6px 12px;
   border-radius:999px;
-  font-size:13px;
+  font-size:15px;
   margin-right:8px;
   margin-bottom:8px;
   border:1px solid rgba(22,119,255,.18);
@@ -125,41 +126,43 @@ body{
 .grid{
   display:grid;
   grid-template-columns:repeat(2, minmax(0, 1fr));
-  gap:10px;
-  font-size:14px;
+  gap:12px;
+  font-size:16px;
 }
 .grid-item{
   background:linear-gradient(180deg, rgba(15,23,42,.03), rgba(15,23,42,.02));
-  padding:12px 12px;
+  padding:14px;
   border-radius:14px;
   border:1px solid rgba(15,23,42,.06);
 }
 .grid-item strong{
   display:block;
-  margin-bottom:4px;
+  margin-bottom:6px;
   color:#0f172a;
   letter-spacing:.2px;
+  font-size:16px;
 }
 
 .warn{
   margin-top:12px;
   color:var(--warn);
-  font-size:14px;
+  font-size:16px;
   font-weight:800;
 }
 
 @media (max-width: 640px){
-  body{padding:16px}
-  .card-content{padding:16px}
+  body{padding:16px;font-size:18px;line-height:1.75}
+  .card-content{padding:18px}
   .grid{grid-template-columns:1fr}
   .plant-img{height:clamp(190px, 52vw, 300px)}
-  .name{font-size:16px;margin-bottom:8px}
+  .name{font-size:24px;margin-bottom:10px}
   .cat-img-grid{padding:12px 12px 0;gap:8px}
   .cat-img{border-radius:12px}
-  .grid{gap:8px}
-  .grid-item{padding:10px}
-  .tag{font-size:12px;padding:4px 9px;margin-right:6px;margin-bottom:6px}
-  .warn{font-size:13px}
+  .grid{gap:10px;font-size:17px}
+  .grid-item{padding:14px}
+  .grid-item strong{font-size:17px}
+  .tag{font-size:14px;padding:5px 10px;margin-right:6px;margin-bottom:6px}
+  .warn{font-size:15px}
 }
 
 @media print{
